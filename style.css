@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 760px;
+    margin: 40px auto;
+    padding: 0 18px;
+}
+
+.form-card {
+    background: white;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.tag {
+    display: inline-block;
+    padding: 5px 12px;
+    margin-bottom: 10px;
+    background: #dbeafe;
+    color: #1d4ed8;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+h1 {
+    margin-bottom: 8px;
+}
+
+header p:last-child {
+    color: #64748b;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group > label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid #93c5fd;
+    border-color: #2563eb;
+}
+
+.radio-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    margin-right: 20px;
+    font-weight: normal;
+}
+
+.policy-row {
+    margin: 20px 0;
+}
+
+.policy-row label {
+    display: flex;
+    gap: 9px;
+    align-items: center;
+}
+
+small {
+    display: block;
+    margin-top: 5px;
+    color: #dc2626;
+    font-size: 13px;
+}
+
+.success,
+.error-box {
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+
+.success {
+    color: #166534;
+    background: #dcfce7;
+}
+
+.error-box {
+    color: #991b1b;
+    background: #fee2e2;
+}
+
+.button-row {
+    display: flex;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    background: #2563eb;
+    color: white;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+.reset-btn {
+    background: #e2e8f0;
+    color: #334155;
+}
+
+.reset-btn:hover {
+    background: #cbd5e1;
+}
+
+footer {
+    padding: 18px;
+    text-align: center;
+    color: #64748b;
+}
+
+@media (max-width: 600px) {
+    .form-card {
+        padding: 22px 18px;
+    }
+
+    .button-row {
+        flex-direction: column;
+    }
+}
